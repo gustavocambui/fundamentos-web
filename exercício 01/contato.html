@@ -18,23 +18,32 @@
             <a href="contato.html">Contato</a>
         </li>
     </ul>
-    <h1 class="center">Entre em contato comigo</h1>
-    <div class="container">
-        <form>
-            <label for="nome">Nome:</label> <br>
-            <input type="text" id="nome">
-            <br>
-            <br>
-            <label for="email">E-mail:</label> <br>
-            <input type="email" id="email">
-            <br>
-            <br>
-            <label for="assunto">Assunto:</label> <br>
-            <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-            <br>
-            <br>
-            <button>Enviar</button>
-        </form>
+    <h1 class="center">Entre em contato com o Sonhar</h1>
+    <div class="container-contatos">
+        <div>
+            <form>
+                <label for="nome">Nome:</label> <br>
+                <input type="text" id="nome" onkeyup='validaNome()'>
+                <div id="txtNome"></div>
+                <br>
+                <label for="email">E-mail:</label> <br>
+                <input type="email" id="email" onkeyup='validaEmail()'>
+                <div id="txtEmail"></div>
+                <br>
+                <label for="assunto">Assunto:</label> <br>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup='validaAssunto()'></textarea>
+                <div id="txtAssunto"></div>
+                <br>
+                <button onclick="enviar()">Enviar</button>
+            </form>
+        </div>
+        <div class="ml-50">
+            <iframe src="https://giphy.com/embed/12J32T2Ghb2G1q" width="380" height="380" frameBorder="0"
+                class="giphy-embed" allowFullScreen></iframe>
+        </div>
     </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

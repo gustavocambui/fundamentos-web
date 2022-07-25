@@ -47,4 +47,17 @@
 #menu li a:hover {
     color: cadetblue;
 }
+
 /* Estilos da página contato.html */
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.container-contatos {
+    font-size: 18px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
